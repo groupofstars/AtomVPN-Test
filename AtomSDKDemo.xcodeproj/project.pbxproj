@@ -13,7 +13,6 @@
 		30E0BB782C53BF9800B7A187 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8A28642087D43B008A7D9E /* NetworkExtension.framework */; };
 		30E0BB7B2C53BF9800B7A187 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E0BB7A2C53BF9800B7A187 /* PacketTunnelProvider.swift */; };
 		30E0BB802C53BF9800B7A187 /* PacketTunnelWireGuardiOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 30E0BB772C53BF9800B7A187 /* PacketTunnelWireGuardiOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		30E0BB862C53BFEB00B7A187 /* AtomWireguardTunnel in Frameworks */ = {isa = PBXBuildFile; productRef = 30E0BB852C53BFEB00B7A187 /* AtomWireguardTunnel */; };
 		30E0BB8D2C53C21A00B7A187 /* build_wireguard_go_bridge.sh in Resources */ = {isa = PBXBuildFile; fileRef = 30E0BB8B2C53C21A00B7A187 /* build_wireguard_go_bridge.sh */; };
 		660352CE2F987E220BE95D57 /* Pods_PacketTunnelOpenVPNiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E23F43F51F5119BAD2A27DE /* Pods_PacketTunnelOpenVPNiOS.framework */; };
 		6E5BAD09207386B200895431 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BAD08207386B200895431 /* AppDelegate.m */; };
@@ -31,6 +30,7 @@
 		BA242591235759DD0058F721 /* ConnectWithTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA24258D235759DD0058F721 /* ConnectWithTagsViewController.m */; };
 		BA40F63723584F5500D65981 /* ConnectWithChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40F63623584F5500D65981 /* ConnectWithChannelViewController.m */; };
 		DF1AC0BB7A822F3869B6DCA6 /* Pods_AtomSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0627B3C5F26579BE9C3EB6EC /* Pods_AtomSDKDemo.framework */; };
+		F85D733F2D0F508400524249 /* AtomWireguardTunnel in Frameworks */ = {isa = PBXBuildFile; productRef = F85D733E2D0F508400524249 /* AtomWireguardTunnel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E0BB862C53BFEB00B7A187 /* AtomWireguardTunnel in Frameworks */,
+				F85D733F2D0F508400524249 /* AtomWireguardTunnel in Frameworks */,
 				30E0BB782C53BF9800B7A187 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +309,7 @@
 			);
 			name = PacketTunnelWireGuardiOS;
 			packageProductDependencies = (
-				30E0BB852C53BFEB00B7A187 /* AtomWireguardTunnel */,
+				F85D733E2D0F508400524249 /* AtomWireguardTunnel */,
 			);
 			productName = PacketTunnelWireGuardiOS;
 			productReference = 30E0BB772C53BF9800B7A187 /* PacketTunnelWireGuardiOS.appex */;
@@ -350,15 +350,19 @@
 				TargetAttributes = {
 					30E0BB652C529CF900B7A187 = {
 						CreatedOnToolsVersion = 15.3;
+						ProvisioningStyle = Automatic;
 					};
 					30E0BB762C53BF9800B7A187 = {
 						CreatedOnToolsVersion = 15.3;
+						ProvisioningStyle = Automatic;
 					};
 					30E0BB872C53C1FA00B7A187 = {
 						CreatedOnToolsVersion = 15.3;
+						ProvisioningStyle = Automatic;
 					};
 					6E5BAD03207386B200895431 = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.NetworkExtensions.iOS = {
 								enabled = 1;
@@ -380,7 +384,7 @@
 			);
 			mainGroup = 6E5BACFB207386B100895431;
 			packageReferences = (
-				30E0BB842C53BFEB00B7A187 /* XCRemoteSwiftPackageReference "AtomWireguardTunnel" */,
+				F85D733D2D0F508300524249 /* XCRemoteSwiftPackageReference "AtomWireguardTunnel" */,
 			);
 			productRefGroup = 6E5BAD05207386B200895431 /* Products */;
 			projectDirPath = "";
@@ -911,7 +915,7 @@
 				CODE_SIGN_ENTITLEMENTS = AtomSDKDemo/AtomSDKDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J3T8W3347Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AtomSDKDemo/AtomSDK",
@@ -940,7 +944,7 @@
 				CODE_SIGN_ENTITLEMENTS = AtomSDKDemo/AtomSDKDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J3T8W3347Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AtomSDKDemo/AtomSDK",
@@ -1011,9 +1015,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		30E0BB842C53BFEB00B7A187 /* XCRemoteSwiftPackageReference "AtomWireguardTunnel" */ = {
+		F85D733D2D0F508300524249 /* XCRemoteSwiftPackageReference "AtomWireguardTunnel" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AtomSDK/AtomWireguardTunnel";
+			repositoryURL = "https://github.com/groupofstars/AtomWireguardTunnel";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -1022,9 +1026,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		30E0BB852C53BFEB00B7A187 /* AtomWireguardTunnel */ = {
+		F85D733E2D0F508400524249 /* AtomWireguardTunnel */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 30E0BB842C53BFEB00B7A187 /* XCRemoteSwiftPackageReference "AtomWireguardTunnel" */;
+			package = F85D733D2D0F508300524249 /* XCRemoteSwiftPackageReference "AtomWireguardTunnel" */;
 			productName = AtomWireguardTunnel;
 		};
 /* End XCSwiftPackageProductDependency section */

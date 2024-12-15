@@ -1,13 +1,13 @@
 {
-  "originHash" : "502f82516d8e4b5eecc131b06bb93ee2c284b097b8ccce97439cba3132a9d4bd",
+  "originHash" : "963ae5d78931282391d6a959d7d040ad404d6312b641da82c1c974d395fa65c1",
   "pins" : [
     {
       "identity" : "atomwireguardtunnel",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/groupofstars/AtomWireguardTunnel",
+      "location" : "https://github.com/AtomSDK/AtomWireguardTunnel",
       "state" : {
         "branch" : "main",
-        "revision" : "b17df5a61c75c45d17ca857edd696b90e30f7672"
+        "revision" : "4715cfc83dc5792d67f091d84d562a8e520c1fc3"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AtomSDK/wireguard-apple",
       "state" : {
-        "branch" : "master",
-        "revision" : "cfbfb32f2092996e47ab5dabfdbdf93619f5cd5c"
+        "revision" : "cfbfb32f2092996e47ab5dabfdbdf93619f5cd5c",
+        "version" : "3.0.0"
       }
     }
   ],
